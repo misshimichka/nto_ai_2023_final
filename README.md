@@ -11,7 +11,7 @@ BLEU (private score): 7.44
 ## Идея решения
 1. За основу был взят данный авторами бейзлайн (Оригинал: [ClipCap](https://github.com/rmokady/CLIP_prefix_caption))
 2. Для улучшения работы модели использовался Random Sampling и Keyframe extraction. Для этого мы взяли модель 
-[RuCLIPtiny](https://github.com/cene555/ru-clip-tiny), которая довольная легкая по сравнению с RuCLIP и работает с русскоязычными текстами.
+[RuCLIPtiny](https://github.com/cene555/ru-clip-tiny), которая довольная легкая по сравнению с RuCLIP и работает с русскоязычными текстами. С помощью cosine similarity выбирали кадры, которые лучше других соответствуют тексту вопроса. 
 3. Вместо ru-gpt3-small взяли ru-gpt3-medium, и она показала лучший результат, однако не успели засабмитить.
 
 ## Варианты улучшения скора
